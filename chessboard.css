@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 30px);
+    grid-template-rows: repeat(8, 30px);
+    border: 2px solid #000;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits without distortion */
+}
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: #000;
+}
+
+
